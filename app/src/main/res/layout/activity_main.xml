@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_user_field"
+        android:layout_below="@id/logo"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="50sp"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"
+        />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn"
+        android:layout_below="@id/user_field"
+        android:textSize="11sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="130sp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorBackground"
+        />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextHint"
+        android:textSize="20sp"
+        android:layout_below="@id/main_btn"
+        />
+
+</RelativeLayout>
